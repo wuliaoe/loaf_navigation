@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to bottom right, #FAB2FF, #1904E5);
+    height: 100vh;
+}
+
+
+body h1 a {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+body h1 a p {
+    flex-direction: row;
+    font-size: 15px;
+    color: #fff;
+}
+
+body h1:hover a {
+    color: #fff;
+    font-size: 80px;
+
+}
+
+
+.menu_toggler {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu_toggler:hover+label,
+.menu_toggler:hover+label::before,
+.menu_toggler:hover+label::after {
+    background: #fff;
+}
+
+.menu_toggler:checked+label {
+    background: transparent;
+}
+
+.menu_toggler:checked+label::before,
+.menu_toggler:checked+label::after {
+    top: 0;
+    width: 40px;
+    transform-origin: 50% 50%;
+}
+
+.menu_toggler:checked+label::before {
+    transform: rotate(45deg);
+}
+
+.menu_toggler:checked+label::after {
+    transform: rotate(-45deg);
+}
+
+.menu_toggler:checked~ul .menu_item {
+    opacity: 1;
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(1) {
+    transform: rotate(0deg) translateX(-110px);
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(2) {
+    transform: rotate(60deg) translateX(-110px);
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(3) {
+    transform: rotate(120deg) translateX(-110px);
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(4) {
+    transform: rotate(180deg) translateX(-110px);
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(5) {
+    transform: rotate(240deg) translateX(-110px);
+}
+
+.menu_toggler:checked~ul .menu_item:nth-child(6) {
+    transform: rotate(300deg) translateX(-110px);
+}
+
+.menu_toggler:checked~ul .menu_item a {
+    pointer-events: auto;
+}
+
+.menu_toggler+label {
+    width: 40px;
+    height: 5px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.5px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+
+.menu_toggler+label::before,
+.menu_toggler+label::after {
+    width: 40px;
+    height: 5px;
+    display: block;
+    z-index: 1;
+    border-radius: 2.5px;
+    background: rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s, top 0.5s;
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.menu_toggler+label::before {
+    top: 10px;
+}
+
+.menu_toggler+label::after {
+    top: -10px;
+}
+
+.menu_item:nth-child(1) a {
+    transform: rotate(0deg);
+}
+
+.menu_item:nth-child(2) a {
+    transform: rotate(60deg);
+}
+
+.menu_item:nth-child(3) a {
+    transform: rotate(120deg);
+}
+
+.menu_item:nth-child(4) a {
+    transform: rotate(180deg);
+}
+
+.menu_item:nth-child(5) a {
+    transform: rotate(240deg);
+}
+
+.menu_item:nth-child(6) a {
+    transform: rotate(300deg);
+}
+
+.menu_item {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.menu_item a {
+    /* 此处是将 a 转换为块级元素，不是隐藏 */
+    display: block;
+    /* 将父盒子的宽度复制给他 */
+    width: inherit;
+    line-height: 80px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    /* 定义是否对鼠标指针做出反应 */
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.menu_item a:hover {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.7);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 45px;
+}

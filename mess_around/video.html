@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="js/video.js">
+    <title>恭喜你，你被骗了！叫你别点</title>
+
+</head>
+
+<body>
+
+    <div>
+        <div class="zuobian">
+            <div id="kepu">
+                <h2>科普时间</h2>
+                <p>“你被骗了”是一个恶作剧，当你点击一个链接或一个视频，以为会看到链接/视频描述的内容，点进去却是一个男人随着音乐在摇摆，这时就是你被骗了。</p>
+                <p>该梗又叫Rickrolling，即瑞克摇摆，Rick是Richard的昵称，因经常会出现这种标题和封面很吸引人但点进去却是rickroll的视频，该梗再次火了起来。</p>
+            </div>
+            <a href="#" class="ameihau" id="button2">返回按钮</a>
+            <a href="#" id="button1" class="ameihau">哈哈哈,你被骗了!<br />这才是返回按钮</a>
+            <a href="摸鱼导航.html" id="button3" class="ameihau">好了，不骗你了<br />心满意足之后返回吧！</a>
+        </div>
+        <video id="ved" src="video/你被骗了.mp4" autoplay="autoplay" loop="loop" poster="images/封面.png"></video>
+
+    </div>
+    <script>
+        document.getElementById("button2").onclick = function () {
+            document.getElementById("button1").style.display = "block";
+            document.getElementById("button2").style.display = "none";
+            ved.play();
+        };
+        document.getElementById("button1").onclick = function move2() {
+            document.getElementById("button1").style.display = "none";
+            document.getElementById("button3").style.display = "block";
+            document.getElementById("kepu").style.display = "block";
+        };
+    </script>
+
+</body>
+
+</html>
