@@ -9,15 +9,15 @@ HTML+CSS+JS 随手敲的一个v1.0版本，还有很多功能和代码需要优�
 
 首页是一个简单的导航栏，导航常用的一些网站，敲了一个旋转效果的小UI
 
-![演示(0)](..\mess_around\images\演示(0).gif)
+<img src="https://s2.loli.net/2022/04/19/WRkJA2UjysFmzaP.gif" width="50%" ></img>
 
 然后是上分的几个字点击进去就会显示学习资料，提示点击左边的按钮即可获取，点击后播放“你被骗了”，同事看到后会心一笑，完美的摸了几分钟鱼，敲代码的精神又上来了！
 
-![演示(1)](D:\AllCode\newcode\mess_around\images\演示(1).gif)
+<img src="https://s2.loli.net/2022/04/19/IeCn7VKY3TXlEoH.gif" width="50%" ></img>
 
 有的人可能不懂这个梗所以我特意弄了一个科普页面，只需要再次点击按钮即可出现，he/she看完之后会心一笑，完美的摸了几分钟鱼，敲代码的精神又上来了！
 
-![演示(2)](D:\AllCode\newcode\mess_around\images\演示(2).gif)
+<img src="https://s2.loli.net/2022/04/19/d7OL4qCIpDuGSNy.gif" width="50%" ></img>
 
 
 
